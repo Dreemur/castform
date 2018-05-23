@@ -1,0 +1,13 @@
+.buttonAdd{
+    float: right;
+    padding-right: 50px;
+    padding-top: 50px;
+}
+
+.buttonAdd button{
+    border-color: white;
+    background-color: #222;
+    color: white;
+    border: 1px solid;
+    border-radius: 5px;
+}

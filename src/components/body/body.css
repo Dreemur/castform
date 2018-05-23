@@ -1,0 +1,34 @@
+/* desktop */
+@media only screen and (min-width: 1024px) {
+    .content{
+        background-color: rgba(133, 130, 136, 0.822);
+        margin: 20px;
+        border-radius: 10px;
+    }
+    .loading{
+        background-color: rgba(133, 130, 136, 0.822);
+        margin: 20px;
+        border-radius: 10px;
+        height: 500px;
+    }
+}
+
+/* mobile */
+@media only screen and (max-width: 768px) {
+    .loading{
+        background-color: rgba(133, 130, 136, 0.822);
+        margin: 20px;
+        border-radius: 10px;
+        height: 500px;
+    }
+}
+
+/* tablet */
+@media only screen and (max-width: 1023px) {
+    .loading{
+        background-color: rgba(133, 130, 136, 0.822);
+        margin: 20px;
+        border-radius: 10px;
+        height: 500px;
+    }
+}
