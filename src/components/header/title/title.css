@@ -1,8 +1,10 @@
 .titulo{
     text-align: center;
     float: left;
+    margin: 10px;
 }
 
 img {
-    height: 50px;
-} 
+    height: 40px;
+}  
+

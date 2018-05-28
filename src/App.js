@@ -14,7 +14,7 @@ class App extends Component {
     }
 
   passSeed = (val) => {
-    console.log("recibiendo: ",val);
+    console.log("catch app",val)
     this.setState({ciudad: val});   
   }
 

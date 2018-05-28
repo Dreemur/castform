@@ -11,3 +11,25 @@
     border: 1px solid;
     border-radius: 5px;
 }
+
+.buttonAdd input{
+    border-color: white;
+    background-color: #222;
+    color: white;
+    border: 1px solid;
+    border-radius: 5px;
+}
+
+.buttonAdd input.text{
+    background-color: white;
+    color: #222;
+}
+
+/* mobile */
+@media only screen and (max-width: 768px) {
+    .buttonAdd{
+        padding-right: 10px;
+    }
+}
+
+

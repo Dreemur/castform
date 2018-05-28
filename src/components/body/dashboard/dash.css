@@ -1,31 +1,60 @@
+.del_btn button{
+   width: 25%;
+   background-color:rgba(11, 7, 219, 0.733);
+   color: white;
+   border-radius: 10px;
+   text-align: center;
+   float: right;
+   border-color: white;
+}
+
 .forecast:hover{
     cursor: pointer;
 }
 
 .forecast{
     width: 200px;
-    height: 250px;
+    height: 100%;
     background-color: rgba(11, 7, 219, 0.733);
     display: inline-block;
     border-radius: 10px;
     color: white;
 }
 
-.div-ppal img{
+.div-ppal{
+    display: inline-block;
+    float: center;
+    text-align: center;
+}
+
+.div-ppal div{
+    float: left;
+    text-align: center;
+    margin: 8px;
+}
+
+.div-ppal div img{
     width: 75px;
     height: 75px;
-    float: left;
 }
+
+.custom-overlay{
+    padding: 10%;
+}
+
+.custom-modal {
+    padding:1px;
+    width: 100%;
+    border-radius: 10px; 
+}
+
 
 /* mobile */
 @media only screen and (max-width: 768px) {
     .forecast{
         margin: 15px;
-        /* background-color: rgba(233, 164, 36, 0.733); */
     }    
-    .div-ppal img{
-        margin: 5px;       
-    }
+      
 }
 
 /* tablet */
@@ -33,9 +62,7 @@
     .forecast{
         margin: 15px;
     }
-    .div-ppal img{
-        margin: 5px;
-    }
+    
 }
 
 /* Desktop */
@@ -43,9 +70,7 @@
     .forecast{
         margin: 50px;
     }    
-    .div-ppal img{
-        margin: 10px;
-    }
+    
 }
 
 

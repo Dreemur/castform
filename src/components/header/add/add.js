@@ -1,14 +1,32 @@
 import React, { Component } from 'react';
 import './add.css';
-
-const ciudad = '';
+import Api from '../../http-services/api-w';
 
 class Add extends Component {
     constructor(){
         super();
         this.state = {
             click : 'false',
+            weather : {},
         }    
+    }
+
+    callApi = (city) => {
+        console.log("call Api: ",city)
+        Api.getWeather(city)
+        .then(res => {
+            this.setState({
+                weather :res.data,
+            });
+            this.props.data(this.state.weather);
+        })
+        .catch(error => {
+            console.log("error handle: ",error.response.data.cod)
+            if(error.response.data.cod === '404')
+                alert("City was not found");
+            else if(error.response.data.cod !== '200')
+                alert("Something went wrong, try again!");
+        });
     }
 
     onClick = (event) => {
@@ -18,10 +36,13 @@ class Add extends Component {
 
     onSubmit = (event) => {
         event.preventDefault();
-        this.ciudad = event.target.elements.id.value;
-        console.log(this.ciudad);     
+        const city = event.target.elements.id.value;         
         this.setState({click : 'false'})
-        this.props.data(this.ciudad);
+        this.callApi(city);
+    }
+
+    sum = (a,b) => {
+        return a+b;
     }
 
     render() {
@@ -31,7 +52,7 @@ class Add extends Component {
                     <button onClick={this.onClick}>Add</button>
                 :
                 <form onSubmit={this.onSubmit}>
-                    <input type="text" id="id" placeholder="Search" />
+                    <input className="text" type="text" id="id" placeholder="Search" />
                     <input type="submit" value="Search" />
                 </form>}
             </div>

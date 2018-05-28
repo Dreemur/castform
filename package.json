@@ -7,6 +7,7 @@
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
     "react-modal": "^3.4.4",
+    "react-responsive-modal": "^3.0.2",
     "react-scripts": "1.1.4"
   },
   "scripts": {
@@ -14,5 +15,11 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "jest": "^23.0.1"
   }
 }
+
+
+https://api.openweathermap.org/data/2.5/group?id=1850147,2643743,3995465&units=metric&appid=863e934378f4a78b4382d31defb16f01

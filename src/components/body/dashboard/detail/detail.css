@@ -1,0 +1,51 @@
+.info{
+    display: inline-block;
+    border-radius: 10px;    
+    color: white;
+    background-color: rgba(108, 106, 228, 0.733);
+    text-align: center;
+    width: 100%;
+    height: 80%;
+}
+
+.ppal_info{
+    text-align: center;
+    width: 100%;
+    height: 75px;
+    width:40%;
+    display:inline-block;
+}
+
+.ppal_info img {
+    height: 60px;
+}
+
+.next5{    
+    text-align: center;
+    float: left;
+    height: 250px;
+    width: 100%;
+    background-color:black;
+}
+
+.buttons{
+    text-align: center;
+    float: left;
+    width: 100%;
+}
+
+.buttons button{
+    background-color: rgba(108, 106, 228, 0.733);
+    border-color: white;
+    color:white;
+    border-radius: 10px;
+}
+
+.second_info label{
+    font-weight: bold;
+}
+
+.second_info{
+    text-align: left;
+    padding: 10px;
+}
